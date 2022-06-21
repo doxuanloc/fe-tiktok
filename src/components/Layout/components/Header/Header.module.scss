@@ -1,0 +1,150 @@
+.wrapper-hello {
+    height: 60px;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.logo {
+    cursor: pointer;
+}
+
+.inner {
+    height: 100%;
+    width: 1150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search, .search-result {
+    width: 380px;
+}
+
+.search {
+    position: relative;
+    width: 361px;
+    height: 38px;
+    background: rgba(22, 24, 35, 0.06);
+    border-radius: 92px;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1.5px solid transparent;
+
+    input {
+        flex: 1;
+        color: #000;
+        font-size: 1rem;
+        border: none;   
+        background-color: transparent;
+        background-color: --primary;
+        outline: none;
+    }
+
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: rgba(22, 24, 35, 0.75);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        right: 52px;
+        width: 1px;
+        height: 28px;
+        bottom: 9px;
+        background-color: rgba(22, 24, 35, 0.12)
+    }
+    &:focus-within {
+       border: 1.5px solid rgba(22, 24, 35, 0.2)
+    }
+}
+
+.search-title {
+    margin: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(22, 24, 35, 0.5);
+    padding: 8px;
+}
+
+.clear-btn,
+.loading {
+    position: absolute;
+    right: 66px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(22, 24, 35, 0.34);
+    border: none;
+    padding: 0;
+}
+
+.search-btn {
+    width: 52px;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.3rem;
+    color: rgba(22, 24, 35, 0.34);
+    &:hover {
+            background: rgba(22, 24, 35, 0.03);
+            cursor: pointer;
+        }
+}
+
+
+
+.menu-btn {
+    font-size: 1.2rem;
+    margin-left: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+
+    button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: #000;
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+}
+.user-avt {
+    height: 32px;
+    width: 32px;
+    padding: 18px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+// .badge {
+//     position: absolute;
+//     top: -3px;
+//     right: 0px;
+//     padding: 0px 6px;
+//     height: 2rem;
+//     line-height: 2rem;
+//     border-radius: 10px;
+//     font-size: 1.4rem;
+//     font-weight: 600;
+//     color: var(--white);
+//     font-family: var(--font-family);
+//     background-color: var(--primary);
+// }
+
+.line {
+    background-color: red;
+}
+

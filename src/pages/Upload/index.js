@@ -1,8 +1,8 @@
-import Header from "~/components/Layout/DefaultLayout/Header";
+// import Header from "~/components/Layout/components/Header";
 function Upload() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <h2>UploadPage</h2>
     </div>
   );
